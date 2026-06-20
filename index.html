@@ -3,184 +3,432 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ravi Teja Konanki - Personal Portfolio</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <meta name="description" content="Ravi Teja Konanki – Full Stack Developer skilled in Python, Django, React and cloud deployment. Portfolio, projects, and contact." />
+    <title>Ravi Teja Konanki — Full Stack Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="shape"></div>
-    <header>
+
+    <!-- ── NAVBAR ── -->
+    <header id="navbar">
       <nav>
-        <h1>Ravi Teja Konanki</h1>
-        <div class="burger">
-          <i class="fa-solid fa-bars"></i>
-        </div>
-        <ul class="links">
-          <li><a href="#about">about</a></li>
-          <li><a href="#projects">projects</a></li>
-          <li><a href="#contact">contact</a></li>
+        <a href="#" class="nav-logo">RTK<span>.</span></a>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li>
+            <a href="Ravi_Teja_Konanki.pdf" target="_blank" class="nav-resume-link">
+              Resume <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </li>
         </ul>
+        <button class="burger" id="burgerBtn" aria-label="Toggle navigation">
+          <span></span><span></span><span></span>
+        </button>
       </nav>
     </header>
-    <main>
-      <div class="container">
-        <div class="text">
-          <div class="grp">
-            <h2>Welcome to my profile</h2>
-            <h1>
-              Hi, I'm <span>Ravi Teja Konanki</span> <br />
-              A Full stack Developer
-            </h1>
-            <div class="icons">
-              <a href="https://github.com/Ravitejakonanki-21">
-                <i class="fa-brands fa-github"></i>
-              </a>
-              <div class="line"></div>
-              <a href="https://www.linkedin.com/in/ravi-teja-konanki-432391264/">
-                <i class="fa-brands fa-linkedin-in"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="img">
-          <img src="./images/pfp1.jpeg" alt="" />
-        </div>
-      </div>
-    </main>
-    <!-- about section  -->
-    <div class="about" id="about">
-      <div class="container">
-        <div class="text">
-          <h3>About</h3>
-          <h1>Get to know me</h1>
-          <p>
-            I'm Ravi Teja Konanki, an 19 year-old full stack developer who loves
-            spending the entire day learning and expermenting new stuffs and
-            technologies.
+
+    <!-- ── HERO ── -->
+    <section class="hero" id="home">
+      <div class="hero-bg-glow"></div>
+      <div class="hero-container">
+        <div class="hero-text">
+          <p class="hero-greeting"><i class="fa-solid fa-hand-wave"></i> Hey there, I'm</p>
+          <h1 class="hero-name">Ravi Teja<br /><span>Konanki</span></h1>
+          <p class="hero-role">Full Stack Developer &amp; Backend Engineer</p>
+          <p class="hero-bio">
+            I build clean, scalable web applications — from Python/Django backends to responsive frontends.
+            Passionate about solving real problems with code and continuously learning new technologies.
           </p>
-        </div>
-        <div class="skills">
-          <h2>Skills</h2>
-          <div class="wrapper">
-            <div>
-              <i class="fa-brands fa-html5"></i>
-            </div>
-            <div>
-              <i class="fa-brands fa-css3-alt"></i>
-            </div>
-            <div>
-              <i class="fa-brands fa-java"></i>
-            </div>
-            <div>
-              <i class="fa-brands fa-python"></i>
-            </div>
-            <div>
+          <div class="hero-actions">
+            <a href="#projects" class="btn-primary">View My Work <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="Ravi_Teja_Konanki.pdf" download="Ravi_Teja_Konanki_Resume.pdf" class="btn-outline" id="resumeDownloadBtn">
+              <i class="fa-solid fa-file-arrow-down"></i> Download CV
+            </a>
+          </div>
+          <div class="hero-socials">
+            <a href="https://github.com/Ravitejakonanki-21" target="_blank" title="GitHub" class="social-link">
               <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/ravi-teja-konanki-432391264/" target="_blank" title="LinkedIn" class="social-link">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="mailto:Konankiraviteja306@gmail.com" title="Email" class="social-link">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+        <div class="hero-img-wrap">
+          <div class="hero-img-ring"></div>
+          <div class="hero-img">
+            <img src="./images/pfp1.jpeg" alt="Ravi Teja Konanki" />
+          </div>
+          <div class="hero-badge">
+            <i class="fa-solid fa-code"></i>
+            <span>Full Stack Dev</span>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-hint">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ── ABOUT ── -->
+    <section class="about" id="about">
+      <div class="section-container">
+        <div class="section-label">About Me</div>
+        <h2 class="section-title">Get to Know Me</h2>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              I'm a <strong>20-year-old full stack developer</strong> from India with a passion for
+              building impactful, scalable software. My core stack is <strong>Python + Django</strong> on the backend,
+              paired with clean, modern frontends.
+            </p>
+            <p>
+              I've interned at two companies — The Developers Arena and Codtech IT Solutions —
+              where I built backend systems, REST APIs, and optimized database performance.
+              I also enjoy exploring machine learning, cloud deployment, and cybersecurity.
+            </p>
+            <div class="about-stats">
+              <div class="stat-card">
+                <h3>2+</h3>
+                <p>Internships</p>
+              </div>
+              <div class="stat-card">
+                <h3>11+</h3>
+                <p>Certifications</p>
+              </div>
+              <div class="stat-card">
+                <h3>5+</h3>
+                <p>Projects</p>
+              </div>
             </div>
-            <div>
-              <i class="fa-brands fa-"></i>
-            </div>
-            <div>
-              <i class="fa-brands fa-"></i>
-            </div>
-            <div>
-              <i class="fa-brands fa-cl"></i>
+          </div>
+          <div class="skills-panel">
+            <h3>Tech Stack</h3>
+            <div class="skills-grid">
+              <div class="skill-chip"><i class="fa-brands fa-python"></i> Python</div>
+              <div class="skill-chip"><i class="fa-solid fa-layer-group"></i> Django</div>
+              <div class="skill-chip"><i class="fa-brands fa-html5"></i> HTML5</div>
+              <div class="skill-chip"><i class="fa-brands fa-css3-alt"></i> CSS3</div>
+              <div class="skill-chip"><i class="fa-brands fa-js"></i> JavaScript</div>
+              <div class="skill-chip"><i class="fa-brands fa-react"></i> React</div>
+              <div class="skill-chip"><i class="fa-solid fa-database"></i> MySQL</div>
+              <div class="skill-chip"><i class="fa-brands fa-docker"></i> Docker</div>
+              <div class="skill-chip"><i class="fa-brands fa-github"></i> Git / GitHub</div>
+              <div class="skill-chip"><i class="fa-brands fa-linux"></i> Linux</div>
+              <div class="skill-chip"><i class="fa-brands fa-java"></i> Java</div>
+              <div class="skill-chip"><i class="fa-solid fa-cloud"></i> Cloud (GCP)</div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <!-- about section  -->
+    </section>
 
-    <!-- projects section -->
+    <!-- ── PROJECTS ── -->
+    <section class="projects" id="projects">
+      <div class="section-container">
+        <div class="section-label">Portfolio</div>
+        <h2 class="section-title">Projects I've Built</h2>
+        <div class="projects-grid">
 
-    <div class="projects" id="projects">
-      <div class="container">
-        <h3>Portfolio</h3>
-        <h1 class="title">A selection of Word I've done</h1>
-        <div class="projects-wrapper">
-          <div class="project">
-            <div class="card">
-              <div class="overview">
-                <h1>snake game (python)</h1>
-                <div class="btns">
-                  <a href="https://github.com/ravitejako/snake-game" target="_blank">
-                    <i class="fa-brands fa-github"></i>
-                  </a>
-                  <a href="https://web-game-bay.vercel.app/" target="_blank">
-                    <i class="fa-solid fa-link"></i>
-                  </a>
+          <div class="project-card">
+            <div class="project-img">
+              <img src="./images/p1.jpeg" alt="Snake Game" />
+              <div class="project-overlay">
+                <div class="project-tags">
+                  <span>Python</span><span>Pygame</span>
                 </div>
               </div>
-              <img src="./images/p1.jpeg" alt="project 1" />
+            </div>
+            <div class="project-body">
+              <h3>Snake Game</h3>
+              <p>A classic snake game built with Python and Pygame, deployed as a playable web experience.</p>
+              <div class="project-links">
+                <a href="https://github.com/ravitejako/snake-game" target="_blank" class="proj-link">
+                  <i class="fa-brands fa-github"></i> Code
+                </a>
+                <a href="https://web-game-bay.vercel.app/" target="_blank" class="proj-link proj-link--live">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                </a>
+              </div>
             </div>
           </div>
 
-          <div class="project">
-            <div class="card">
-              <div class="overview">
-                <h1>gun detection</h1>
-                <div class="btns">
-                  <a href="https://github.com/ravitejako/gun-detection" target="_blank">
-                    <i class="fa-brands fa-github"></i>
-                  </a>
-                  <a href="project url" target="_blank">
-                    <i class="fa-solid fa-link"></i>
-                  </a>
+          <div class="project-card">
+            <div class="project-img">
+              <img src="./images/p2.jpg" alt="Gun Detection" />
+              <div class="project-overlay">
+                <div class="project-tags">
+                  <span>Python</span><span>OpenCV</span><span>ML</span>
                 </div>
               </div>
-              <img src="./images/p2.jpg" alt="moviesProject_img" />
+            </div>
+            <div class="project-body">
+              <h3>Gun Detection System</h3>
+              <p>Real-time weapon detection system using computer vision and machine learning for surveillance use cases.</p>
+              <div class="project-links">
+                <a href="https://github.com/ravitejako/gun-detection" target="_blank" class="proj-link">
+                  <i class="fa-brands fa-github"></i> Code
+                </a>
+              </div>
             </div>
           </div>
 
-          
+          <div class="project-card">
+            <div class="project-img">
+              <img src="./images/p3.png" alt="Weather App" />
+              <div class="project-overlay">
+                <div class="project-tags">
+                  <span>JavaScript</span><span>API</span><span>CSS</span>
+                </div>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>Weather App</h3>
+              <p>Live weather application that fetches real-time data via OpenWeather API with a clean, responsive UI.</p>
+              <div class="project-links">
+                <a href="https://github.com/ravitejako/weather-app" target="_blank" class="proj-link">
+                  <i class="fa-brands fa-github"></i> Code
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card project-card--featured">
+            <div class="project-img">
+              <div class="project-placeholder">
+                <i class="fa-solid fa-robot"></i>
+              </div>
+              <div class="project-overlay">
+                <div class="project-tags">
+                  <span>Next.js</span><span>Gemini AI</span><span>GCP</span>
+                </div>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>ElectionGuide AI <span class="badge-new">Featured</span></h3>
+              <p>AI-powered election guide using Google Gemini API and Next.js, deployed on Google Cloud Run with real-time chat.</p>
+              <div class="project-links">
+                <a href="https://github.com/Ravitejakonanki-21/ElectionGuide-AI" target="_blank" class="proj-link">
+                  <i class="fa-brands fa-github"></i> Code
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── EXPERIENCE ── -->
+    <section class="experience" id="experience">
+      <div class="section-container">
+        <div class="section-label">Experience</div>
+        <h2 class="section-title">Work Experience</h2>
+        <div class="timeline">
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div class="timeline-meta">
+                  <span class="timeline-date"><i class="fa-regular fa-calendar"></i> Dec 2025 – May 2026</span>
+                  <span class="timeline-type">Internship</span>
+                </div>
+                <button class="cert-btn" data-cert="developers-arena">
+                  <i class="fa-solid fa-certificate"></i> View Certificate
+                </button>
+              </div>
+              <h3>Python Developer Intern</h3>
+              <p class="timeline-company"><i class="fa-solid fa-building"></i> The Developers Arena</p>
+              <ul class="timeline-bullets">
+                <li>Built backend modules for a social platform using <strong>Python and Django</strong>.</li>
+                <li>Automated backend workflows via <strong>REST APIs</strong>, reducing manual deployment steps.</li>
+                <li>Optimized <strong>database queries</strong> to improve backend performance significantly.</li>
+              </ul>
+              <div class="timeline-tech">
+                <span>Python</span><span>Django</span><span>REST API</span><span>PostgreSQL</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div class="timeline-meta">
+                  <span class="timeline-date"><i class="fa-regular fa-calendar"></i> Sept 2024 – Oct 2024</span>
+                  <span class="timeline-type">Internship</span>
+                </div>
+                <button class="cert-btn" data-cert="codtech">
+                  <i class="fa-solid fa-certificate"></i> View Certificate
+                </button>
+              </div>
+              <h3>Python Backend Intern</h3>
+              <p class="timeline-company"><i class="fa-solid fa-building"></i> Codtech IT Solutions</p>
+              <ul class="timeline-bullets">
+                <li>Built a <strong>role-based backend system</strong> using Python and MySQL.</li>
+                <li>Optimized SQL queries to improve database efficiency by <strong>40%</strong>.</li>
+                <li>Automated backend processes, reducing manual workload significantly.</li>
+              </ul>
+              <div class="timeline-tech">
+                <span>Python</span><span>MySQL</span><span>Backend</span><span>SQL</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CERTIFICATE MODAL ── -->
+    <div class="cert-modal" id="certModal" role="dialog" aria-modal="true">
+      <div class="cert-modal-inner">
+        <div class="cert-modal-header">
+          <div class="cert-modal-heading">
+            <i class="fa-solid fa-circle-check"></i>
+            <h2 id="certModalTitle"></h2>
+            <span class="cert-tag">Internship</span>
+          </div>
+          <button class="cert-close" id="certClose" aria-label="Close modal">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+        <div class="cert-modal-body">
+          <div class="cert-modal-image">
+            <img id="certModalImg" src="" alt="Certificate" />
+          </div>
+          <div class="cert-modal-details">
+            <p class="cert-label">Issued by</p>
+            <h3 id="certModalIssuer"></h3>
+            <p class="cert-meta"><i class="fa-regular fa-calendar"></i> <span id="certModalYear"></span></p>
+            <hr />
+            <div class="cert-learned-heading">
+              <i class="fa-solid fa-book-open"></i> What I Learned
+            </div>
+            <ul id="certModalLearnings"></ul>
           </div>
         </div>
       </div>
     </div>
-    <!-- projects section -->
 
-    <!-- contact  -->
-
-    <div class="contact" id="contact">
-      <div class="container">
-        <div class="header">
-          <h3>Contact</h3>
-          <h1>Reach me out via:</h1>
+    <!-- ── CERTIFICATIONS ── -->
+    <section class="certifications" id="certifications">
+      <div class="section-container">
+        <div class="section-label">Credentials</div>
+        <div class="certs-header">
+          <h2 class="section-title">Certifications</h2>
+          <p class="certs-sub">Click any card to view the certificate</p>
         </div>
-        <div class="wrapper">
-          <div class="grp">
-            <i class="fa-solid fa-paper-plane"></i>
-            <span>Konankiraviteja306@gmail.com</span>
-          </div>
-          <div class="grp">
-            <i class="fa-solid fa-phone"></i>
-            <span>+91 9908009212</span>
-          </div>
-          <div class="grp">
-            <i class="fa-brands fa-linkedin"></i>
-            <span>https://www.linkedin.com/in/ravi-teja-konanki-432391264/</span>
+        <div class="cert-filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="cybersecurity">Cybersecurity</button>
+          <button class="filter-btn" data-filter="others">Others</button>
         </div>
-        <div class="footer">
-          <p>Let's talk about a project</p>
-          <a href="mailto:@konankiraviteja30@gmial.com">
-            Hire Me <i class="fa-solid fa-envelope"></i>
-          </a>
+        <div class="cert-grid" id="certGrid"></div>
+        <div class="cert-stats">
+          <div class="cert-stat">
+            <i class="fa-solid fa-certificate"></i>
+            <div><h4>11+</h4><p>Certifications</p></div>
+          </div>
+          <div class="cert-stat">
+            <i class="fa-solid fa-shield-halved"></i>
+            <div><h4>Cisco</h4><p>Ethical Hacker</p></div>
+          </div>
+          <div class="cert-stat">
+            <i class="fa-solid fa-brain"></i>
+            <div><h4>IBM</h4><p>ML &amp; Data Science</p></div>
+          </div>
+          <div class="cert-stat">
+            <i class="fa-solid fa-rocket"></i>
+            <div><h4>Always</h4><p>Learning</p></div>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <!-- contact  -->
-    <a href="#" class="back-top">
+    <!-- ── CONTACT ── -->
+    <section class="contact" id="contact">
+      <div class="section-container">
+        <div class="section-label">Contact</div>
+        <h2 class="section-title">Let's Work Together</h2>
+        <p class="contact-sub">Open to internships, freelance work, and full-time opportunities. Drop me a message!</p>
+        <div class="contact-grid">
+          <div class="contact-cards">
+            <a href="mailto:Konankiraviteja306@gmail.com" class="contact-card">
+              <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div>
+                <p class="contact-card-label">Email</p>
+                <p class="contact-card-value">Konankiraviteja306@gmail.com</p>
+              </div>
+            </a>
+            <a href="tel:+919908009212" class="contact-card">
+              <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+              <div>
+                <p class="contact-card-label">Phone</p>
+                <p class="contact-card-value">+91 9908009212</p>
+              </div>
+            </a>
+            <a href="https://www.linkedin.com/in/ravi-teja-konanki-432391264/" target="_blank" class="contact-card">
+              <div class="contact-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+              <div>
+                <p class="contact-card-label">LinkedIn</p>
+                <p class="contact-card-value">ravi-teja-konanki</p>
+              </div>
+            </a>
+            <a href="https://github.com/Ravitejakonanki-21" target="_blank" class="contact-card">
+              <div class="contact-icon"><i class="fa-brands fa-github"></i></div>
+              <div>
+                <p class="contact-card-label">GitHub</p>
+                <p class="contact-card-value">Ravitejakonanki-21</p>
+              </div>
+            </a>
+          </div>
+          <div class="contact-cta">
+            <h3>Ready to build something great?</h3>
+            <p>Whether it's a backend system, a web app, or a side project — I'd love to hear about it.</p>
+            <a href="mailto:Konankiraviteja306@gmail.com" class="btn-primary btn-large">
+              <i class="fa-solid fa-paper-plane"></i> Send a Message
+            </a>
+            <a href="Ravi_Teja_Konanki.pdf" download="Ravi_Teja_Konanki_Resume.pdf" class="btn-outline">
+              <i class="fa-solid fa-file-arrow-down"></i> Download Resume
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── FOOTER ── -->
+    <footer class="footer">
+      <div class="footer-inner">
+        <p class="footer-logo">RTK<span>.</span></p>
+        <p class="footer-copy">© 2026 Ravi Teja Konanki. Built with ❤️ and lots of ☕</p>
+        <div class="footer-socials">
+          <a href="https://github.com/Ravitejakonanki-21" target="_blank"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/ravi-teja-konanki-432391264/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="mailto:Konankiraviteja306@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to top -->
+    <a href="#home" class="back-top" id="backTop" aria-label="Back to top">
       <i class="fa-solid fa-arrow-up"></i>
     </a>
-  </body>
-  <script src="./app.js"></script>
-</html>
 
+    <script src="./cert-data.js"></script>
+    <script src="./cert-list-data.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
